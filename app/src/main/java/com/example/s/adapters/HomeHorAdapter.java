@@ -59,7 +59,6 @@ public class HomeHorAdapter extends RecyclerView.Adapter<HomeHorAdapter.ViewHold
             updateVerticalRec.callBack(position, homeVerModels);
             check = false;
         }
-
             holder.cardView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -69,10 +68,10 @@ public class HomeHorAdapter extends RecyclerView.Adapter<HomeHorAdapter.ViewHold
                     if (position == 0) {
 
                         ArrayList<HomeVerModel> homeVerModels = new ArrayList<>();
-                        homeVerModels.add(new HomeVerModel(R.drawable.fig1, "Fig 1", "6:00 - 23:00", "4.9", "Min - $45"));
-                        homeVerModels.add(new HomeVerModel(R.drawable.fig2, "Fig 2", "6:00 - 23:00", "4.9", "Min - $45"));
-                        homeVerModels.add(new HomeVerModel(R.drawable.fig3, "Fig 3", "6:00 - 23:00", "4.9", "Min - $45"));
-                        homeVerModels.add(new HomeVerModel(R.drawable.fig4, "Fig 4", "6:00 - 23:00", "4.9", "Min - $45"));
+                        homeVerModels.add(new HomeVerModel(R.drawable.fig1, "Fig 1", "6:00 - 23:00", "4.9", "Min - Rs.50"));
+                        homeVerModels.add(new HomeVerModel(R.drawable.fig2, "Fig 2", "6:00 - 23:00", "4.9", "Min - Rs.50"));
+                        homeVerModels.add(new HomeVerModel(R.drawable.fig3, "Fig 3", "6:00 - 23:00", "4.9", "Min - Rs.50"));
+                        homeVerModels.add(new HomeVerModel(R.drawable.fig4, "Fig 4", "6:00 - 23:00", "4.9", "Min - Rs.50"));
 
                         updateVerticalRec.callBack(position, homeVerModels);
                     }
@@ -80,9 +79,9 @@ public class HomeHorAdapter extends RecyclerView.Adapter<HomeHorAdapter.ViewHold
                     else if (position == 1) {
                         ArrayList<HomeVerModel> homeVerModels = new ArrayList<>();
 
-                        homeVerModels.add(new HomeVerModel(R.drawable.bananas1, "Bananas 1", "6:00 - 23:00", "4.9", "Min - $45"));
-                        homeVerModels.add(new HomeVerModel(R.drawable.bananas2, "Bananas 2", "6:00 - 23:00", "4.9", "Min - $45"));
-                        homeVerModels.add(new HomeVerModel(R.drawable.bananas3, "Bananas 3", "6:00 - 23:00", "4.9", "Min - $45"));
+                        homeVerModels.add(new HomeVerModel(R.drawable.bananas1, "Bananas 1", "6:00 - 23:00", "4.9", "Min - Rs.55"));
+                        homeVerModels.add(new HomeVerModel(R.drawable.bananas2, "Bananas 2", "6:00 - 23:00", "4.9", "Min - Rs.55"));
+                        homeVerModels.add(new HomeVerModel(R.drawable.bananas3, "Bananas 3", "6:00 - 23:00", "4.9", "Min - Rs.55"));
 
 
                         updateVerticalRec.callBack(position, homeVerModels);
@@ -91,10 +90,10 @@ public class HomeHorAdapter extends RecyclerView.Adapter<HomeHorAdapter.ViewHold
                     else if (position == 2) {
                         ArrayList<HomeVerModel> homeVerModels = new ArrayList<>();
 
-                        homeVerModels.add(new HomeVerModel(R.drawable.dragon_fruits1, "Dragon Fruit 1", "6:00 - 23:00", "4.9", "Min - $45"));
-                        homeVerModels.add(new HomeVerModel(R.drawable.dragon_fruits2, "Dragon Fruit 2", "6:00 - 23:00", "4.9", "Min - $45"));
-                        homeVerModels.add(new HomeVerModel(R.drawable.dragon_fruits3, "Dragon Fruit 3", "6:00 - 23:00", "4.9", "Min - $45"));
-                        homeVerModels.add(new HomeVerModel(R.drawable.dragon_fruits4, "Dragon Fruit 4", "6:00 - 23:00", "4.9", "Min - $45"));
+                        homeVerModels.add(new HomeVerModel(R.drawable.dragon_fruits1, "Dragon Fruit 1", "6:00 - 23:00", "4.9", "Min - Rs.75"));
+                        homeVerModels.add(new HomeVerModel(R.drawable.dragon_fruits2, "Dragon Fruit 2", "6:00 - 23:00", "4.9", "Min - Rs.75"));
+                        homeVerModels.add(new HomeVerModel(R.drawable.dragon_fruits3, "Dragon Fruit 3", "6:00 - 23:00", "4.9", "Min - Rs.75"));
+                        homeVerModels.add(new HomeVerModel(R.drawable.dragon_fruits4, "Dragon Fruit 4", "6:00 - 23:00", "4.9", "Min - Rs.75"));
 
                         updateVerticalRec.callBack(position, homeVerModels);
                     }
@@ -102,9 +101,9 @@ public class HomeHorAdapter extends RecyclerView.Adapter<HomeHorAdapter.ViewHold
                     else if (position == 3) {
                         ArrayList<HomeVerModel> homeVerModels = new ArrayList<>();
 
-                        homeVerModels.add(new HomeVerModel(R.drawable.grapes1, "Grapes 1", "6:00 - 23:00", "4.9", "Min - $45"));
-                        homeVerModels.add(new HomeVerModel(R.drawable.grapes2, "Grapes 2", "6:00 - 23:00", "4.9", "Min - $45"));
-                        homeVerModels.add(new HomeVerModel(R.drawable.grapes3, "Grapes 3", "6:00 - 23:00", "4.9", "Min - $45"));
+                        homeVerModels.add(new HomeVerModel(R.drawable.grapes1, "Grapes 1", "6:00 - 23:00", "4.9", "Min - Rs.35"));
+                        homeVerModels.add(new HomeVerModel(R.drawable.grapes2, "Grapes 2", "6:00 - 23:00", "4.9", "Min - Rs.35"));
+                        homeVerModels.add(new HomeVerModel(R.drawable.grapes3, "Grapes 3", "6:00 - 23:00", "4.9", "Min - Rs.35"));
 
 
                         updateVerticalRec.callBack(position, homeVerModels);
@@ -113,10 +112,10 @@ public class HomeHorAdapter extends RecyclerView.Adapter<HomeHorAdapter.ViewHold
                     else if (position == 4) {
                         ArrayList<HomeVerModel> homeVerModels = new ArrayList<>();
 
-                        homeVerModels.add(new HomeVerModel(R.drawable.guava_fruit1, "Guava Fruits 1", "6:00 - 23:00", "4.9", "Min - $45"));
-                        homeVerModels.add(new HomeVerModel(R.drawable.guava_fruit2, "Guava Fruits 2", "6:00 - 23:00", "4.9", "Min - $45"));
-                        homeVerModels.add(new HomeVerModel(R.drawable.guava_fruit3, "Guava Fruits 3", "6:00 - 23:00", "4.9", "Min - $45"));
-                        homeVerModels.add(new HomeVerModel(R.drawable.guava_fruit4, "Guava Fruits 4", "6:00 - 23:00", "4.9", "Min - $45"));
+                        homeVerModels.add(new HomeVerModel(R.drawable.guava_fruit1, "Guava Fruits 1", "6:00 - 23:00", "4.9", "Min - Rs.45"));
+                        homeVerModels.add(new HomeVerModel(R.drawable.guava_fruit2, "Guava Fruits 2", "6:00 - 23:00", "4.9", "Min - Rs.45"));
+                        homeVerModels.add(new HomeVerModel(R.drawable.guava_fruit3, "Guava Fruits 3", "6:00 - 23:00", "4.9", "Min - Rs.45"));
+                        homeVerModels.add(new HomeVerModel(R.drawable.guava_fruit4, "Guava Fruits 4", "6:00 - 23:00", "4.9", "Min - Rs.45"));
 
                         updateVerticalRec.callBack(position, homeVerModels);
                     }
@@ -126,6 +125,7 @@ public class HomeHorAdapter extends RecyclerView.Adapter<HomeHorAdapter.ViewHold
             if (select){
                 if (position == 0){
                     holder.cardView.setBackgroundResource(R.drawable.change_bg);
+                    select = false;
                 }
             }
             else {

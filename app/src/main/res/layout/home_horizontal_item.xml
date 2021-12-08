@@ -23,7 +23,7 @@
             android:layout_height="60dp"
             android:layout_gravity="center"
             android:layout_marginTop="0dp"
-            android:src="@drawable/fig" />
+            android:src="@drawable/fig"   />
 
         <TextView
             android:id="@+id/hor_text"
