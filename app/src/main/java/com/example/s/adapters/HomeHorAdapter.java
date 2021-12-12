@@ -90,6 +90,17 @@ public class HomeHorAdapter extends RecyclerView.Adapter<HomeHorAdapter.ViewHold
                     else if (position == 2) {
                         ArrayList<HomeVerModel> homeVerModels = new ArrayList<>();
 
+                        homeVerModels.add(new HomeVerModel(R.drawable.pomegranate1, "Pomegranate 1", "6:00 - 23:00", "4.9", "Min - Rs.70"));
+                        homeVerModels.add(new HomeVerModel(R.drawable.pomegranate2, "Pomegranate 2", "6:00 - 23:00", "4.9", "Min - Rs.70"));
+                        homeVerModels.add(new HomeVerModel(R.drawable.pomegranate3, "Pomegranate 3", "6:00 - 23:00", "4.9", "Min - Rs.70"));
+                        homeVerModels.add(new HomeVerModel(R.drawable.pomegranate4, "Pomegranate 4", "6:00 - 23:00", "4.9", "Min - Rs.70"));
+
+                        updateVerticalRec.callBack(position, homeVerModels);
+                    }
+
+                    else if (position == 3) {
+                        ArrayList<HomeVerModel> homeVerModels = new ArrayList<>();
+
                         homeVerModels.add(new HomeVerModel(R.drawable.dragon_fruits1, "Dragon Fruit 1", "6:00 - 23:00", "4.9", "Min - Rs.75"));
                         homeVerModels.add(new HomeVerModel(R.drawable.dragon_fruits2, "Dragon Fruit 2", "6:00 - 23:00", "4.9", "Min - Rs.75"));
                         homeVerModels.add(new HomeVerModel(R.drawable.dragon_fruits3, "Dragon Fruit 3", "6:00 - 23:00", "4.9", "Min - Rs.75"));
@@ -98,7 +109,7 @@ public class HomeHorAdapter extends RecyclerView.Adapter<HomeHorAdapter.ViewHold
                         updateVerticalRec.callBack(position, homeVerModels);
                     }
 
-                    else if (position == 3) {
+                    else if (position == 4) {
                         ArrayList<HomeVerModel> homeVerModels = new ArrayList<>();
 
                         homeVerModels.add(new HomeVerModel(R.drawable.grapes1, "Grapes 1", "6:00 - 23:00", "4.9", "Min - Rs.35"));
@@ -109,7 +120,7 @@ public class HomeHorAdapter extends RecyclerView.Adapter<HomeHorAdapter.ViewHold
                         updateVerticalRec.callBack(position, homeVerModels);
                     }
 
-                    else if (position == 4) {
+                    else if (position == 5) {
                         ArrayList<HomeVerModel> homeVerModels = new ArrayList<>();
 
                         homeVerModels.add(new HomeVerModel(R.drawable.guava_fruit1, "Guava Fruits 1", "6:00 - 23:00", "4.9", "Min - Rs.45"));

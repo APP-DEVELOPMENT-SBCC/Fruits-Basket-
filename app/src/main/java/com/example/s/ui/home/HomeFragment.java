@@ -49,6 +49,7 @@ public class HomeFragment extends Fragment implements UpdateVerticalRec {
 
         homeHorModelList.add(new HomeHorModel(R.drawable.fig,"Fig"));
         homeHorModelList.add(new HomeHorModel(R.drawable.bananas,"Bananas"));
+        homeHorModelList.add(new HomeHorModel(R.drawable.pomegranate,"Pomegranate"));
         homeHorModelList.add(new HomeHorModel(R.drawable.dragon_fruits,"Dragon Fruits"));
         homeHorModelList.add(new HomeHorModel(R.drawable.grapes,"Grapes"));
         homeHorModelList.add(new HomeHorModel(R.drawable.guava_fruit,"Guava_Fruit"));
