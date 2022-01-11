@@ -7,6 +7,8 @@ import android.view.Menu;
 
 import com.example.s.activities.LoginActivity;
 import com.example.s.activities.WelcomeActivity;
+import com.example.s.activities.fruitdb;
+import com.google.android.gms.auth.api.signin.internal.Storage;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
@@ -17,12 +19,29 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.s.databinding.ActivityMainBinding;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+
+    //Widgets
+
+    RecyclerView recyView;
+
+    // Firebase
+    private DatabaseReference myRef;
+    //private Storage
+
+    //Variables
+    private ArrayList<fruitdb> fruitList;
 
     private AppBarConfiguration mAppBarConfiguration;
 
@@ -34,6 +53,25 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        recyView = findViewById(R.id.recyView);
+
+        LinearLayoutManager layoutManager = new LinearLayoutManager(context:this);
+        recyView.setLayoutManager(layoutManager);
+        recyView.setHasFixedSize(true);
+
+        //Firebase
+        myRef = FirebaseDatabase.getInstance().getReference();
+
+        //ArrayList
+        fruitList = new ArrayList<>();
+
+        //Clear Array List
+        ClearAll();
+
+        //Get Data Method
+        GetDataFromFirebase();
+
 
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -49,6 +87,20 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navigationView, navController);
 
         mAuth = FirebaseAuth.getInstance();
+    }
+
+    private void GetDataFromFirebase() {
+
+
+    }
+
+    private void ClearAll(){
+        if(fruitList !-= null)
+        {
+            fruitList.clear();
+        }
+
+        fruitList = new ArrayList<>();
     }
 
     @Override
