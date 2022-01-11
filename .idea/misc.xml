@@ -64,10 +64,11 @@
         <entry key="..\:/Users/Nitin/AndroidStudioProjects/Fruits-Basket-3/app/src/main/res/layout/home_vertical_item.xml" value="0.13134057971014493" />
         <entry key="..\:/Users/Nitin/AndroidStudioProjects/Fruits-Basket-3/app/src/main/res/layout/my_order_fragment.xml" value="0.13134057971014493" />
         <entry key="..\:/Users/Nitin/AndroidStudioProjects/Fruits-Basket-3/app/src/main/res/layout/nav_header_main.xml" value="0.13134057971014493" />
+        <entry key="..\:/Users/Nitin/AndroidStudioProjects/Fruits-Basket-5/app/src/main/res/layout/fruit_item.xml" value="0.2" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

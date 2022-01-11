@@ -41,6 +41,9 @@ public class FruitListAdapter extends RecyclerView.Adapter<FruitListAdapter.View
         holder.fruitBrand.setText(fruit.getBrand());
         holder.fruitPrice.setText(fruit.getPrice_per_kg());
         holder.fruitType.setText(fruit.getFruit_type());
+        holder.fruitQuality.setText(fruit.getQuality());
+        holder.fruitOrganic.setText(fruit.getOrganic());
+        holder.fruitProduction.setText(fruit.getProduct_type());
         Glide.with(context).applyDefaultRequestOptions(new RequestOptions().override(70,70)).load(fruit.getUrl()).into(holder.imagView);
     }
 
@@ -52,13 +55,16 @@ public class FruitListAdapter extends RecyclerView.Adapter<FruitListAdapter.View
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         public ImageView imagView;
-        public TextView fruitBrand, fruitType, fruitPrice;
+        public TextView fruitBrand, fruitType, fruitPrice, fruitQuality, fruitOrganic, fruitProduction;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             imagView = itemView.findViewById(R.id.imgView);
             fruitBrand = itemView.findViewById(R.id.brand);
             fruitType = itemView.findViewById(R.id.fruit_type);
             fruitPrice = itemView.findViewById(R.id.price);
+            fruitQuality = itemView.findViewById(R.id.quality);
+            fruitOrganic = itemView.findViewById(R.id.organic);
+            fruitProduction = itemView.findViewById(R.id.production);
         }
     }
 }
