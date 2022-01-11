@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment"
     android:background="@color/mediumGray">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <EditText
             android:id="@+id/editText"
@@ -69,15 +71,18 @@
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/home_hor_rec"
-            android:layout_width="match_parent"
+            android:id="@+id/fruit_list"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="6dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.0" />
 
-        <androidx.recyclerview.widget.RecyclerView
+        <!--<androidx.recyclerview.widget.RecyclerView
             android:id="@+id/home_Ver_rec"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -85,11 +90,11 @@
             android:layout_marginTop="6dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/home_hor_rec" />
+            app:layout_constraintTop_toBottomOf="@+id/home_hor_rec" />-->
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
-</androidx.core.widget.NestedScrollView>
+</LinearLayout>

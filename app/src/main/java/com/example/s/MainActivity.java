@@ -8,6 +8,7 @@ import android.view.Menu;
 import com.example.s.activities.LoginActivity;
 import com.example.s.activities.WelcomeActivity;
 import com.example.s.activities.fruitdb;
+import com.example.s.models.FruitModel;
 import com.google.android.gms.auth.api.signin.internal.Storage;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -41,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     //private Storage
 
     //Variables
-    private ArrayList<fruitdb> fruitList;
+    private ArrayList<FruitModel> fruitList;
 
     private AppBarConfiguration mAppBarConfiguration;
 
@@ -56,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
         recyView = findViewById(R.id.recyView);
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(context:this);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         recyView.setLayoutManager(layoutManager);
         recyView.setHasFixedSize(true);
 
@@ -95,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void ClearAll(){
-        if(fruitList !-= null)
+        if(fruitList != null)
         {
             fruitList.clear();
         }
